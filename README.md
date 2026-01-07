@@ -31,6 +31,31 @@ This project demonstrates **real-world backend development practices** such as v
 
 ---
 
+## Project Structure
+
+The project follows a simple **MVC-style architecture** to keep the code clean, maintainable, and well-organized.
+
+```text
+expense-tracker-api/
+ ├── routes/              # API route definitions
+ │    └── expenseRoutes.js
+ ├── controllers/         # Request handling and validation logic
+ │    └── expenseController.js
+ ├── services/            # Business logic and in-memory data storage
+ │    └── expenseService.js
+ ├── server.js            # Application entry point and configuration
+ └── package.json
+```
+This separation ensures:
+
+Routes only define endpoints
+
+Controllers handle validation and request/response logic
+
+Services handle data storage and business logic
+
+---
+
 ## Expense Data Model
 
 ```json
@@ -166,23 +191,16 @@ Response:
 * **CRUD operations**
 * **Input validation and sanitization**
 * **Proper error handling** using HTTP status codes
+* Clean code organization using a simple **MVC-style architecture**
 * **Swagger-based API documentation**
 * **Real-world backend development practices**
-
----
-
-## Future Improvements
-
-* Replace in-memory storage with **MongoDB or SQL database**
-* Add **user authentication**
-* Add **pagination and date-range filtering**
-* Add **logging and monitoring**
 
 ---
 
 ## Author
 
 **Kirnavi Bhavsar**
+
 Intern Project – **Personal Expense Tracker API**
 
 
